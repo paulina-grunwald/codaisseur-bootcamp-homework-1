@@ -3,7 +3,7 @@
 var  hero = {
     name : 'Paulina',
     heroic: true,
-    inventory: [[{type: 'axe', damage: 2}]],
+    inventory: [[{type: 'axe', damage: 2}],[{type: 'bow', damage: 3}],[{type: 'hammer', damage: 5}],[{type: 'morning star', damage: 5}]],
     health: 6,
     weapon: {type: 'axe', damage: 2}
 };
@@ -102,7 +102,6 @@ function accessInventory() {
 
 function displayStats() {
     let heroName = hero.name;
-    console.log(hero.name);
     let displayHeroName = document.getElementById("heroName")
     displayHeroName.innerHTML = "Hero name is " + heroName + ".";
 
@@ -121,4 +120,32 @@ function displayStats() {
     
 };
 
+
+function displayInventory() {
+    let heroInventory = hero.inventory
+    for (let i = 0; i < heroInventory.length; i++) {
+        let itemsType = heroInventory[i][0].type; 
+        let itemsDamage = heroInventory[i][0].damage;
+        console.log(itemsType);
+        console.log(itemsDamage);
+        /*
+        let itemsType = hero.inventory.type; 
+        let itemsDamage = hero.inventory.type; 
+        let inventoryItems = document.getElementById("inventoryItems")
+
+        let type = items[index];
+        let inventoryItems = document.getElementById("HeroInventoryList")
+        var newListItem = document.createElement("li");
+        newListItem.className = "weaponItem";
+        newListItem.innerHTML = item;
+        newListItem.appendChild(inventoryItems);
+        */
+    }
+    
+    
+};
+
 displayStats()
+
+displayInventory()
+console.log(displayInventory());
