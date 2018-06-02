@@ -16,6 +16,7 @@ function rest(creature) {
     return creature;
 };
 
+item = {type: 'sword', damage:7}
 function pickUpItem(creature, item) {
     creature.inventory.push(item)
     return creature;
@@ -59,7 +60,16 @@ var bedButton = document.getElementById("bed");
 bedButton.addEventListener("onclick" , restHero);
 
 function restHero() {
-    console.log(hero.health);
+    console.log("Current hero health level is " + hero.health);
     rest(hero);
-    console.log(hero.health);
+    console.log(hero.name + " health was increased to " + hero.health);
+};
+
+var weaponButton = document.getElementById("weapon");
+weaponButton.addEventListener("onclick" , restHero);
+
+function takeHeroWeapon() {
+    console.log(hero.name + " has picked " + hero.weapon.type);
+    pickUpItem(hero, hero.weapon);
+    console.log(hero.name + " has changed weapon to " + hero.weapon.type);
 };
