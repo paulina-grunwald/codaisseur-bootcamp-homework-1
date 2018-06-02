@@ -12,19 +12,28 @@ var  hero = {
 // Game logic
 // Declare the following functions in global scope: `rest, pickUpItem, dealDamage, equipWeapon, doBattle`
 
-    function rest(creature) {
-        creature.health = 10;
-        return creature
-    };
+function rest(creature) {
+    creature.health = 10;
+    return creature
+};
 
-    function pickUpItem(creature, item) {
-        inventory.push(item)
-        return creature
+function pickUpItem(creature, item) {
+    creature.inventory.push(item)
+    return creature
 
-    };
+};
 
-    function dealDamage(attacker, defender) {
-        defender.health - attacker.weapon.damage
-        return defender
+function dealDamage(attacker, defender) {
+    defender.health = defender.health - attacker.weapon.damage
+    return defender
 
-    };
+};
+
+function equipWeapon(creature, index) {
+    creature.weapon = creature.inventory[index];
+    creature.inventory.shift(index);
+    return creature;
+
+};
+
+
