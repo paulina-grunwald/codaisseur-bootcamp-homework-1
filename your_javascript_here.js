@@ -53,3 +53,13 @@ function doBattle(heroicCreature, creature) {
 
 };
 
+// UI
+
+var bedButton = document.getElementById("bed");
+bedButton.addEventListener("onclick" , restHero);
+
+function restHero() {
+    console.log(hero.health);
+    rest(hero);
+    console.log(hero.health);
+};
