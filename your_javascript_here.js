@@ -6,7 +6,6 @@ var  hero = {
     inventory: [],
     health: 3,
     weapon: {type: 'axe', damage: 3}
-
 };
 
 // Game logic
@@ -20,13 +19,11 @@ function rest(creature) {
 function pickUpItem(creature, item) {
     creature.inventory.push(item)
     return creature;
-
 };
 
 function dealDamage(attacker, defender) {
     defender.health = defender.health - attacker.weapon.damage
     return defender;
-
 };
 
 function equipWeapon(creature, index) {
