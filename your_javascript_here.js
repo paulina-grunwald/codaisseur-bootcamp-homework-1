@@ -14,18 +14,18 @@ var  hero = {
 
 function rest(creature) {
     creature.health = 10;
-    return creature
+    return creature;
 };
 
 function pickUpItem(creature, item) {
     creature.inventory.push(item)
-    return creature
+    return creature;
 
 };
 
 function dealDamage(attacker, defender) {
     defender.health = defender.health - attacker.weapon.damage
-    return defender
+    return defender;
 
 };
 
@@ -36,4 +36,23 @@ function equipWeapon(creature, index) {
 
 };
 
+function doBattle(heroicCreature, creature) {
+    if (heroicCreature.heroic != true) {
+        return null;
+    } 
+    while (heroicCreature.health > 0 && creature.health > 0) {
+        if (heroicCreature.health > 0){
+          dealDamage(heroicCreature,creature);
+        }
+        if (creature.health > 0){
+          dealDamage(creature,heroicCreature);
+        }
+    }
+    if (heroicCreature.health > 0) {
+        return heroicCreature;
+    } else {
+        window.alert(hero.name + " is dead!");
+    }
+
+};
 
