@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12">
                     <img class="image-responsive img" id="bed" onclick="restHero()" src="img/bed.jpg">
-                    <img class="image-responsive img" id="weapon" onclick="takeHeroWeapon()" src="img/weapon.png">
+                    <img class="image-responsive img" id="weapon" onclick="takeHeroWeapon(),removeWeaponButton()" src="img/weapon.png">
                     <img class="image-responsive img" id="enemy" onclick="fight()" src="img/enemy.png">
                     <img class="image-responsive img" id="inventory" onclick="accessInventory()" src="img/backpack.png">
                 </div>
@@ -47,6 +47,14 @@
                     <div class="quote" id="heroWeaponDamage"></div>
                 </div>
             </div>
+            <div class="row" id="title">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="quote" id="inventoryItems">
+                        <ul id="HeroInventoryList"></ul>
+                    </div>
+                </div>
+            </div>
+            <input class="form-control form-control-lg" type="text" placeholder="Input name of your hero">
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
