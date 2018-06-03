@@ -128,7 +128,6 @@ function displayStats() {
     
 };
 
-
 function displayInventory() {
     let heroInventory = hero.inventory
     for (let i = 0; i < heroInventory.length; i++) {
@@ -136,19 +135,13 @@ function displayInventory() {
         let itemsDamage = heroInventory[i][0].damage;
         console.log(itemsType);
         console.log(itemsDamage);
-        /*
-        let inventoryItems = document.getElementById("inventoryItems")
         let inventoryItems = document.getElementById("HeroInventoryList")
         var newListItem = document.createElement("li");
         newListItem.className = "weaponItem";
-        newListItem.innerHTML = item;
-        newListItem.appendChild(inventoryItems);
-        */
+        newListItem.innerHTML = 'type: ' + itemsType + ", " + "damage: " + itemsDamage;
+        inventoryItems.appendChild(newListItem);
     }
-    
-    
 };
-
 
 
 var subButton = document.getElementById('subButton');
@@ -173,3 +166,4 @@ function updateStats() {
     displayStats()
     displayInventory()
 }
+
