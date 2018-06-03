@@ -3,9 +3,9 @@
 var  hero = {
     name : 'Super Hero',
     heroic: true,
-    inventory: [[{type: 'axe', damage: 2}],[{type: 'bow', damage: 3}],[{type: 'hammer', damage: 5}],[{type: 'morning star', damage: 5}]],
+    inventory: [[{type: 'axe', damage: 2}],[{type: 'bow', damage: 3}],[{type: 'fire gun', damage: 7}],[{type: 'morning star', damage: 5}]],
     health: 6,
-    weapon: {type: 'axe', damage: 2}
+    weapon: {type: 'sword', damage: 2}
 };
 
 var  enemy = {
@@ -157,13 +157,9 @@ function updateHeroName() {
     
 };
 
-console.log(displayInventory());
-displayStats()
-
-displayInventory()
-
 function updateStats() {
     displayStats()
     displayInventory()
 }
-
+displayStats()
+updateStats()
