@@ -76,7 +76,7 @@ function restHero() {
 };
 
 var weaponButton = document.getElementById("weapon");
-weaponButton.addEventListener("onclick" , takeHeroWeapon);
+weaponButton.addEventListener("onclick" , takeHeroWeapon,removeWeaponButton);
 
 function takeHeroWeapon() {
     console.log(hero.name + " has picked " + hero.weapon.type);
@@ -84,12 +84,18 @@ function takeHeroWeapon() {
     console.log(hero.name + " has changed weapon to " + hero.weapon.type);
 };
 
+function removeWeaponButton() {
+
+    let weaponButton1 = document.getElementById("weapon");
+    weaponButton1.remove()
+}
 var enemyButton = document.getElementById("enemy");
 enemyButton.addEventListener("onclick" , fight);
 
 function fight() {
     console.log("Battle has started!!");
     doBattle(hero, enemy);
+    enemyButton.remove();
 };
 
 var inventoryButton = document.getElementById("inventory");
@@ -129,11 +135,7 @@ function displayInventory() {
         console.log(itemsType);
         console.log(itemsDamage);
         /*
-        let itemsType = hero.inventory.type; 
-        let itemsDamage = hero.inventory.type; 
         let inventoryItems = document.getElementById("inventoryItems")
-
-        let type = items[index];
         let inventoryItems = document.getElementById("HeroInventoryList")
         var newListItem = document.createElement("li");
         newListItem.className = "weaponItem";
@@ -145,7 +147,12 @@ function displayInventory() {
     
 };
 
+console.log(displayInventory());
 displayStats()
 
 displayInventory()
-console.log(displayInventory());
+
+function updateStats() {
+    displayStats()
+    displayInventory()
+}
