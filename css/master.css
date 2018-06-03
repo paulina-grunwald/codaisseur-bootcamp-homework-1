@@ -120,3 +120,9 @@ h1 {
 .text {
     font-size: 1.3em;
 }
+
+.welcome {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}

@@ -1,7 +1,7 @@
 // Variables
 //Declare the global variable hero and a//1. `name` which is a string (you choose the name)
 var  hero = {
-    name : 'Paulina',
+    name : 'Super Hero',
     heroic: true,
     inventory: [[{type: 'axe', damage: 2}],[{type: 'bow', damage: 3}],[{type: 'hammer', damage: 5}],[{type: 'morning star', damage: 5}]],
     health: 6,
@@ -16,6 +16,8 @@ var  enemy = {
     weapon: {type: 'fire gun', damage: 1}
 };
 
+var userName = document.getElementById('userName');
+userName.innerHTML =  hero.name;
 
 // Game logic
 // Declare the following functions in global scope: `rest, pickUpItem, dealDamage, equipWeapon, doBattle`
@@ -149,13 +151,15 @@ function displayInventory() {
 
 
 
-form.addEventListener("click", updateHeroName);
+var subButton = document.getElementById('subButton');
+subButton.addEventListener('onclick', updateHeroName, false); 
+
 function updateHeroName() {
-    let userInput = document.getElementById(form);
-    let newName = userInput.value;
-    let oldName = hero.name;
-    oldName = inputField
-    inputField.value = null;
+    var nameField = document.getElementById('form').value;
+    var userName = document.getElementById('userName');
+    hero.name = nameField;
+    userName.innerHTML =  nameField;
+    nameField.value = null;
     return hero.name
     
 };

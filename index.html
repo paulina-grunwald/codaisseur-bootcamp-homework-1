@@ -31,9 +31,12 @@
         <div class="container-fluid">
             <div class="row" id="title">
                 <div class="col-md-12 col-lg-12 col-sm-12">
+                    <span class="welcome">Welcome to the game: </span>
+                    <span class="welcome" id="userName"></span>
+                    <span class="welcome">!!!</span>
                     <h1 class="quote">Now you can start BB Adventure game! Enjoy the game and try to defeat all the monsters! <i class="fas fa-trophy"></i>
-
                     </h1>
+
                     <blockquote class="blockquote">
                         <p class="mb-0">Instead of trying to make your life perfect, give yourself the freedom to make it an adventure, and go ever upward.</p>
                     </blockquote>
@@ -58,7 +61,7 @@
                     <p class="text">You can change name of your character here:</p>
                     <div>
                         <input class="form-control form-control-lg" id="form" onclick="updateHeroName()" type="text" placeholder="Input name of your hero">
-                        <button class="success" id="">Submit</button>
+                        <button class="success" onclick="updateHeroName()"id="subButton">Submit</button>
                     </div>
                 
                     <img class="image-responsive img" id="inventory" onclick="updateStats()" src="img/stats.png">
