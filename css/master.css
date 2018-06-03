@@ -1,7 +1,6 @@
 body,
 html {
-    font-family: "Mukta Malar", sans-serif;
-    font-family: "Titillium Web", sans-serif;
+    font-family:  'Open Sans', sans-serif;
     background: white;
     color: black;
     height: 100%;
@@ -103,4 +102,21 @@ li {
 h1 {
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 1.5em;
+}
+
+.stats-info {
+    font-size: 1.7em;
+    font-size: bold;
+}
+
+.stats-text {
+    font-size: 1.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.text {
+    font-size: 1.3em;
 }

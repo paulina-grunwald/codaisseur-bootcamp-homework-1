@@ -147,6 +147,19 @@ function displayInventory() {
     
 };
 
+
+
+form.addEventListener("click", updateHeroName);
+function updateHeroName() {
+    let userInput = document.getElementById(form);
+    let newName = userInput.value;
+    let oldName = hero.name;
+    oldName = inputField
+    inputField.value = null;
+    return hero.name
+    
+};
+
 console.log(displayInventory());
 displayStats()
 
