@@ -107,3 +107,11 @@ If you've implemented these instructions you console in the browser should read:
 - Create a form that allow users to change the name of their hero.
 
 - When an enemy or weapon gets clicked it gets deleted from the DOM
+
+
+# References
+- Codasseuir reader,
+- https://www.w3schools.com/js/js_function_call.asp
+- http://awtomaty.club/wp-content/uploads/2018/01/pixel-bedroom-pink-purple-room-bed-sheet-pixel-bedroom-wallpaper.jpg
+- https://opengameart.org/sites/default/files/Weapon%201_0.png
+- https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Backpack_icon.svg/2000px-Backpack_icon.svg.png

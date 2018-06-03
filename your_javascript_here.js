@@ -137,7 +137,7 @@ function displayInventory() {
         console.log(itemsDamage);
         let inventoryItems = document.getElementById("HeroInventoryList")
         var newListItem = document.createElement("li");
-        newListItem.className = "weaponItem";
+        newListItem.className = "list-group-item";
         newListItem.innerHTML = 'type: ' + itemsType + ", " + "damage: " + itemsDamage;
         inventoryItems.appendChild(newListItem);
     }

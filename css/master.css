@@ -97,6 +97,13 @@ li {
 }
 
 
+.list-group-item {
+    padding: 3px 10px;
+}
+
+.bottom-row {
+    padding: 1em;
+}
 
 /* fonts */
 h1 {

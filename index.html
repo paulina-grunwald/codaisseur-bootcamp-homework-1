@@ -67,23 +67,21 @@
                     <img class="image-responsive img" id="inventory" onclick="updateStats()" src="img/stats.png">
                 </div>
             </div>
-            <div class="row" id="title">
-                <div class="col-md-12 col-lg-12 col-sm-12">
+            <div class="row" id="stats">
+                <div class="col-md-6 col-lg-6 col-sm-6">
                     <p class="stats-info">Current stats of your hero:</p>
                     <div class="stats-text" id="heroName"></div>
                     <div class="stats-text" id="heroHealth"></div>
                     <div class="stats-text" id="heroWeaponType"></div>
                     <div class="stats-text" id="heroWeaponDamage"></div>
                 </div>
-            </div>
-            <div class="row" id="title">
-                <div class="col-md-12 col-lg-12 col-sm-12">
-                    <div class="quote" id="inventoryItems">
-                        <ol id="HeroInventoryList"></ol>
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                    <p class="stats-info">Current inventory of your hero:</p>
+                     <div class="quote" id="inventoryItems">
+                        <ul class="list-groupid" id="HeroInventoryList"></ul>
                     </div>
                 </div>
             </div>
-            
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
