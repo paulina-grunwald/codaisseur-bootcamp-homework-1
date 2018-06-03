@@ -74,7 +74,33 @@ li {
 
 }
 
+.row-icons {
+    padding: 1em;
+    padding-left: 1em;
+}
+
 .img {
     height: 200px;
     width: 300px;
+    padding: 0.5em;
+    padding-bottom: 1em;
+}
+
+#bed,weapon {
+    margin-right: 4em;
+    margin-left: 4em;
+
+}
+#enemy,inventory {
+    margin-right: 4em;
+    margin-left: 4em;
+
+}
+
+
+
+/* fonts */
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1.5em;
 }

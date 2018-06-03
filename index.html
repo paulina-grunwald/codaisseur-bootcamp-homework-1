@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link rel="stylesheet" href="css/master.css">
         <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
@@ -32,19 +33,30 @@
                     <h1 class="quote">Now you can start BB Adventure game! Enjoy the game and try to defeat all the monsters! <i class="fas fa-trophy"></i>
 
                     </h1>
-                    <p>Instead of trying to make your life perfect, give yourself the freedom to make it an adventure, and go ever upward.</p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Instead of trying to make your life perfect, give yourself the freedom to make it an adventure, and go ever upward.</p>
+                    </blockquote>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-icons">
                 <div class="col-md-9 col-lg-9 col-sm-9">
-                    <img class="image-responsive img" id="bed" onclick="restHero()" src="img/bed.jpg">
-                    <img class="image-responsive img" id="weapon" onclick="takeHeroWeapon(),removeWeaponButton()" src="img/weapon.png">
-                    <img class="image-responsive img" id="enemy" onclick="fight()" src="img/enemy.png">
-                    <img class="image-responsive img" id="inventory" onclick="accessInventory()" src="img/backpack.png">
+                    <div class="row justify-content-center align-self-center">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <img class="image-responsive img" id="bed" onclick="restHero()" src="img/bed.jpg">
+                            <img class="image-responsive img" id="weapon" onclick="takeHeroWeapon(),removeWeaponButton()" src="img/weapon.png">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-self-center">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                                <img class="image-responsive img" id="enemy" onclick="fight()" src="img/enemy.png">
+                                <img class="image-responsive img" id="inventory" onclick="accessInventory()" src="img/backpack.png">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3 col-lg-3 col-sm-3">
                     <p>You can change name of your character here:</p>
                     <input class="form-control form-control-lg" type="text" placeholder="Input name of your hero">
+                    <img class="image-responsive img" id="inventory" onclick="updateStats()" src="img/stats.png">
                 </div>
             </div>
             <div class="row" id="title">
